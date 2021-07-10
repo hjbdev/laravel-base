@@ -178,7 +178,7 @@
         leave-to-class="w-0"
         @after-enter="afterEnter"
     >
-        <div v-if="show"></div>
+        <div v-if="show" ref="spacer"></div>
     </transition>
     <transition
         enter-active-class="transition-all duration-300"
@@ -200,6 +200,7 @@ import JetApplicationLogo from "@/Jetstream/ApplicationLogo";
 import JetSidebarLink from "@/Jetstream/SidebarLink";
 import JetDropdown from "@/Jetstream/Dropdown";
 import JetDropdownLink from "@/Jetstream/DropdownLink";
+import { onMounted, ref } from 'vue';
 
 export default {
     emits: ["toggle"],
@@ -217,7 +218,16 @@ export default {
             el.classList.add("sm:w-64");
         };
 
-        return { afterEnter, emit };
+        const spacer = ref(null);
+
+        onMounted(() => {
+            if(props.show) {
+                console.log(spacer);
+                spacer.value.classList.add('sm:w-64');
+            }
+        });
+
+        return { afterEnter, emit, spacer };
     },
 };
 </script>

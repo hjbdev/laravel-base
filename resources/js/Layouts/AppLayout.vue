@@ -88,7 +88,7 @@ export default {
     data() {
         return {
             showingNavigationDropdown: false,
-            showingSidebar: false
+            showingSidebar: localStorage.getItem('jet-sidebar') === 'true'
         };
     },
 
@@ -107,6 +107,7 @@ export default {
 
         toggleSidebar() {
             this.showingSidebar = !this.showingSidebar;
+            localStorage.setItem('jet-sidebar', this.showingSidebar);
         },
 
         logout() {

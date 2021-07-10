@@ -6,9 +6,9 @@
 
         <div class="py-7">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+                <Card>
                     <welcome />
-                </div>
+                </Card>
             </div>
         </div>
     </app-layout>
@@ -17,11 +17,13 @@
 <script>
     import AppLayout from '@/Layouts/AppLayout'
     import Welcome from '@/Jetstream/Welcome'
+    import Card from '@/Ui/Card'
 
     export default {
         components: {
             AppLayout,
             Welcome,
+            Card
         },
     }
 </script>
