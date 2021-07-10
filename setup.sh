@@ -9,5 +9,7 @@ php artisan google-fonts:fetch
 php artisan storage:link
 php artisan migrate
 
+yarn
+
 # Retire this script.
 rm setup.sh
