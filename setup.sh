@@ -10,4 +10,4 @@ php artisan storage:link
 php artisan migrate
 
 # Retire this script.
-mv setup.sh setup.sh.done
+rm setup.sh
