@@ -9,6 +9,7 @@
 
         <!-- Fonts -->
         @googlefonts
+        @googlefonts('logo')
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">

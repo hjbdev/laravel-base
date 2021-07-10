@@ -13,8 +13,8 @@
             class="fixed left-0 top-0 bottom-0 w-64 bg-gradient-to-b from-blue-900 to-blue-800 text-white z-50 flex flex-col"
             v-if="show"
         >
-            <div class="h-16 border-b border-gray-900 shadow flex items-center px-4 sm:px-6 lg:px-8">
-                <JetApplicationLogo class="w-full"></JetApplicationLogo>
+            <div class="h-16 border-b border-gray-900 shadow flex items-center py-3 px-4 sm:px-6 lg:px-8">
+                <JetApplicationLogo class="h-10"></JetApplicationLogo>
             </div>
             <div class="flex-1">
                 <slot></slot>

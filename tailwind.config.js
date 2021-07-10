@@ -14,6 +14,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Inter', ...defaultTheme.fontFamily.sans],
+                logo: ['Exo', ...defaultTheme.fontFamily.sans],
             },
         },
     },

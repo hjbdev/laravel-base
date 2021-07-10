@@ -8,6 +8,7 @@ return [
      */
     'fonts' => [
         'default' => 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap',
+        'logo' => 'https://fonts.googleapis.com/css2?family=Exo:wght@100;600&display=swap',
     ],
 
     /*
