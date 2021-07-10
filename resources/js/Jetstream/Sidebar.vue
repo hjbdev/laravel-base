@@ -1,6 +1,5 @@
 <template>
-    <!-- We have to co-ordinate these transitions to make the layout -->
-    <!-- re-flow smoothly. -->
+    <!-- We have to co-ordinate these transitions to make the layout re-flow smoothly. -->
     <transition
         enter-active-class="transition transform duration-300"
         enter-from-class="-translate-x-full flex-0"

@@ -1,0 +1,13 @@
+# Remove the git folder from the cloned repository
+rm -rf .git/
+
+# Install all composer dependencies
+composer install
+
+# Run setup artisan commands
+php artisan google-fonts:fetch
+php artisan storage:link
+php artisan migrate
+
+# Retire this script.
+mv setup.sh setup.sh.done
