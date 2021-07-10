@@ -221,7 +221,6 @@ export default {
 
         onMounted(() => {
             if(props.show) {
-                console.log(spacer);
                 spacer.value.classList.add('sm:w-64');
             }
         });
