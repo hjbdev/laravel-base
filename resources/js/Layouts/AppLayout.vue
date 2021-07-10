@@ -13,7 +13,7 @@
                     <JetSidebarLink
                         :href="route('dashboard')"
                         :active="route().current('dashboard')"
-                    >Hello</JetSidebarLink>
+                    >Dashboard</JetSidebarLink>
                 </JetSidebar>
                 <div class="flex-1">
                     <nav class="bg-white border-b border-gray-100">
