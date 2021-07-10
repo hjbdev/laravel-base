@@ -4,6 +4,9 @@ rm -rf .git/
 # Install all composer dependencies
 composer install
 
+# Env
+cp .env.example .env
+
 # Run setup artisan commands
 php artisan google-fonts:fetch
 php artisan storage:link
